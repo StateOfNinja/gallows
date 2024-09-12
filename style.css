@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 20px 40px;
+  text-align: center;
+}
+h2 {
+  margin: 10px 0;
+}
+.hangman-container {
+  margin: 20px;
+}
+
+.word {
+  font-size: 24px;
+  letter-spacing: 10px;
+}
+
+.keyboard__button {
+  margin: 5px;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  color: black;
+  background-color: bisque;
+  border: 1px solid black;
+}
+.button__disabled {
+  background-color: red;
+  color: white;
+}
+canvas {
+  margin: 30px auto;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(252, 252, 252);
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+.modal__content p {
+  font-size: 20px;
+  margin: 6px;
+}
+
+.modal__content button {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+@media (max-width: 1440px) {
+  .word {
+    font-size: 20px;
+    letter-spacing: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .word {
+    font-size: 18px;
+    letter-spacing: 5px;
+  }
+}
