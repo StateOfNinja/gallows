@@ -132,7 +132,7 @@ function endGame(win) {
 
 function drawGallows() {
   ctx.beginPath();
-  ctx.moveTo(10, 350);
+  ctx.moveTo(11, 350);
   ctx.lineTo(150, 350);
   ctx.moveTo(80, 350);
   ctx.lineTo(80, 50);
